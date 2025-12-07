@@ -4,33 +4,33 @@
 ```mermaid
 flowchart TB
     %% Pokolenie dziadków
-    DziadekMM["Dziadek (tata mamy)"]
-    BabciaMM["Babcia (mama mamy)"]
-    DziadekMT["Dziadek (tata taty)"]
-    BabciaMT["Babcia (mama taty)"]
+    subgraph R1
+        direction LR
+        DziadekMM["Dziadek (tata mamy)"]
+        BabciaMM["Babcia (mama mamy)"]
+        DziadekMM --- BabciaMM
+    end    
+    subgraph R2
+        direction LR
+        DziadekMT["Dziadek (tata taty)"]
+        BabciaMT["Babcia (mama taty)"]
+        DziadekMT --- BabciaMT
+    end
 
     %% Pokolenie rodziców
-    Mama["Mama"]
-    DziadekMM --> Mama
-    BabciaMM --> Mama
-    
-    Tata["Tata"]
-    DziadekMT --> Tata
-    BabciaMT --> Tata
-
+    subgraph R3
+        direction LR
+        Mama["Mama"]
+        Tata["Tata"]
+        Mama --- Tata
+    end    
+    R1 ---> Mama
+    R2 ---> Tata
 
     %% Wy
     Ja["Ja"]
-    Mama --> Ja
-    Tata --> Ja
-    
+    R3 ---> Ja
     Siostra["Siostra"]
-    Mama --> Siostra
-    Tata --> Siostra
-    
-flowchart LR
-    DziadekMM --- BabciaMM
-    DziadekMT --- BabciaMT
-    Mama --- Tata
+    R3 ---> Siostra
 
 ```
