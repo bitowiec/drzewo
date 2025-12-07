@@ -12,7 +12,7 @@ flowchart TB
     DziadekMT --- BabciaMT
 
     %% Pokolenie rodziców
-    Mama["Mama"]
+    Mama["[Mama](people/mama.md)"]
     DziadekMM --> Mama
     BabciaMM --> Mama
     
@@ -23,7 +23,7 @@ flowchart TB
     Mama --- Tata
 
     %% Wy
-    Ja["Ja"]
+    Ja["[Ja](people/ja.md)"]
     Mama --> Ja
     Tata --> Ja
     
