@@ -32,5 +32,7 @@ flowchart TB
     R3 ---> Ja
     Siostra["Siostra"]
     R3 ---> Siostra
+    
+    click Ja "[Ja](people/ja.md)" _blank
 
 ```
