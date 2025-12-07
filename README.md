@@ -3,11 +3,9 @@
 
 ```mermaid
 flowchart TB
-    %% Pokolenie dziadków mamy
+    %% Pokolenie dziadków
     DziadekMM["Dziadek (tata mamy)"]
     BabciaMM["Babcia (mama mamy)"]
-
-    %% Pokolenie dziadków taty
     DziadekMT["Dziadek (tata taty)"]
     BabciaMT["Babcia (mama taty)"]
 
