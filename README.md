@@ -22,6 +22,10 @@ Przed rozpoczęciem pracy upewnij się, że masz zainstalowane:
 
    Upewnij się, że jesteś w katalogu projektu (np. `/mnt/e/repo/drzewo/`).
 
+```bash
+cd /mnt/e/repo/drzewo/
+```
+
 2. **Utwórz plik `pass.txt` z hasłem**
 
 ```bash
