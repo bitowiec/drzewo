@@ -45,6 +45,8 @@ echo "Tworzenie zaszyfrowanego archiwum..."
     -p"$PASSWORD" "${DOT_FILE_BASE}.7z" \
     "./${DOT_FILE_BASE}.dot" "./${DOT_FILE_BASE}.png"
 
+git add "./${DOT_FILE_BASE}.7z"
+
 if [[ $? -eq 0 ]]; then
     echo "Sukces! Archiwum ${DOT_FILE_BASE}.7z zostało utworzone (AES-256)."
     echo "Pliki źródłowe pozostawiono w katalogu bieżącym."
