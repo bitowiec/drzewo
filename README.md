@@ -57,8 +57,6 @@ Polecenie wykorzystuje Graphviz do przekształcenia opisu drzewa (`.dot`) w obra
 ./arch.sh rodzina
 ```
 
-text
-
 Skrypt tworzy archiwum (np. do backupu lub udostępnienia aktualnej wersji drzewa).
 
 ## Wynik
@@ -70,7 +68,7 @@ Po wykonaniu kroków 3–4 otrzymasz:
 
 ## Uwagi
 
-- Plik `.dot` możesz dowolnie modyfikować, aby dodawać, usuwać lub zmieniać osoby oraz relacje w drzewie.[file:1]
+- Plik `.dot` możesz dowolnie modyfikować, aby dodawać, usuwać lub zmieniać osoby oraz relacje w drzewie.
 - Skrypty `makeReadyToWork.sh` oraz `arch.sh` można dostosować do innych nazw plików lub struktury katalogów, jeśli projekt będzie rozbudowywany.
 
 # Bonus: przykład grafu z mermaid 

@@ -50,9 +50,9 @@ git add "./${DOT_FILE_BASE}.7z"
 if [[ $? -eq 0 ]]; then
     echo "Sukces! Archiwum ${DOT_FILE_BASE}.7z zostało utworzone (AES-256)."
     echo "Pliki źródłowe pozostawiono w katalogu bieżącym."
-    echo "Usunięto pliki źródłowe"
 
     rm "./${DOT_FILE_BASE}.dot" "./${DOT_FILE_BASE}.png"
+    echo "Usunięto pliki źródłowe"
 
     ls -lat
 
